@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monash Data Science App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+
+    /* Phone-sized container */
+    .app {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      min-height: 100vh;
+    }
+
+    /* Top bar */
+    .top-bar {
+      background-color: #a9c4ea;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      font-size: 20px;
+    }
+
+    .top-bar .icons span {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    /* Logo */
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 10px auto 20px auto;
+    }
+
+    .intro {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Each example row */
+    .example {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .chart {
+      text-align: center;
+      margin-right: 15px;
+    }
+
+    .chart-title {
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    /* Pie chart made with CSS */
+    .pie {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #f5a35c 0% 35%,
+        #f7c27a 35% 60%,
+        #e8673c 60% 85%,
+        #3a9c8c 85% 100%
+      );
+    }
+
+    .example-text {
+      flex: 1;
+    }
+
+    .example-text h2 {
+      font-size: 18px;
+    }
+
+    .example-text p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    /* Buttons */
+    .button {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      background-color: #ffffff;
+      border: 1px solid #222;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #a9c4ea;
+    }
+
+    .main-button {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+      <span>&#9776;</span>
+      <div class="icons">
+        <span>&#128276;</span>
+        <span>&#128279;</span>
+        <span>&#128269;</span>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- Put your logo file in the same folder and name it monash-logo.png -->
+      <img class="logo" src="images/monash-logo.png" alt="Monash University logo">
+
+      <p class="intro">
+        This is a data science app where your data will be used for a few projects
+      </p>
+
+      <h1>See how your data is being used</h1>
+
+      <!-- Example 1 -->
+      <div class="example">
+        <div class="chart">
+          <p class="chart-title">Number of Students</p>
+          <div class="pie"></div>
+        </div>
+        <div class="example-text">
+          <h2>Example 1</h2>
+          <p>Small example description</p>
+          <button class="button">See example</button>
+        </div>
+      </div>
+
+      <!-- Example 2 -->
+      <div class="example">
+        <div class="chart">
+          <p class="chart-title">Number of Students</p>
+          <div class="pie"></div>
+        </div>
+        <div class="example-text">
+          <h2>Example 2</h2>
+          <p>Small example description</p>
+          <button class="button">See example</button>
+        </div>
+      </div>
+
+      <!-- Example 3 -->
+      <div class="example">
+        <div class="chart">
+          <p class="chart-title">Number of Students</p>
+          <div class="pie"></div>
+        </div>
+        <div class="example-text">
+          <h2>Example 3</h2>
+          <p>Small example description</p>
+          <button class="button">See example</button>
+        </div>
+      </div>
+
+      <button class="button main-button">Start sharing data</button>
+
+    </div>
+  </div>
+</body>
+</html>
